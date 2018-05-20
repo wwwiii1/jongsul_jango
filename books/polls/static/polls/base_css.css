@@ -1,0 +1,57 @@
+
+html{font-size:12px; font-family:"Nanum Gothic","Malgun Gothic","나눔 고딕","맑은 고딕",sans-serif;  }
+.logo{width:300px;margin:0 auto;}
+.logo img{width:300px;height:76px;}
+body{
+	background:url("../images/back2.jpg");
+	background-size: 100% 100%;
+	background-repeat:no-repeat;
+}
+div#bigbox{
+	width:1060px;
+	min-height:1060px;
+	background:rgba(255,255,255,.0);
+	margin:20px auto;
+}
+header{
+	width:100%;
+}
+h1{
+	text-align:center;
+	display:block;
+	color:darkred;
+}
+.nav{width:100%;}
+.nav > ul{width:100%; height:50px; font-size:0px; background:skyblue; box-sizing:border-box;}
+.nav > ul > li{width:33.33%; float:left; display:inline-block; text-align:center; font-size:14px; font-weight:bold; line-height:50px; height:50px;}
+.nav > ul > li > a:hover{background-color:blue}
+.nav > ul > li > a{display:block; width:100%; height:50px; color:white}
+.nav > ul > li > div{display:none; background:rgba(0,0,0,.8);}
+.nav > ul > li > div > a{display:block; cursor:pointer; clear:both; width:100%; color:white; height:25px; line-height:25px;}
+.nav > ul > li > div > a:hover{background:#666; opacity:80%}
+
+section, aside{padding: 10px 10px;margin-top:50px;float:left;min-height : 500px;opacity:0.9;}
+section{width:70%;background-color:red; margin-right:5px;}
+aside{width:23%;background-color:yellow;}
+.login_box{
+	width:400px;
+	height:150px;
+	padding: 45px;
+	margin: 100px auto;
+}
+.login_box h2{font-size:18px; clear:both; display:block; padding-bottom:10px;}
+.login_box .inputArea{width:300px; height:55px; float:left;}
+.login_box .inputArea input{width:300px; height:25px; box-sizing:border-box; line-height:25px; padding-left:5px; border:0px none; display:block; background:#666;}
+.login_box .inputArea input::placeholder{color:white}
+.login_box .inputArea input[type=password]{margin-top:5px;}
+.login_box .inputArea input:focus{background:#333; color:white;}
+.login_box .buttonArea{float:left; width:55px; height:55px; margin-left:5px;}
+.login_box .buttonArea button{background:black; cursor:pointer; width:55px; height:55px; line-height:55px; border:0px none; color:white; font-weight:bold;}
+footer{clear:both;padding:10px 10px; border-top:1px solid #ccc; background:rgba(0,0,0,0.8); color:white;position: relative;}
+table{
+	height: 500px;
+	margin: 0 auto;
+	background:white;
+	opacity:0.7;
+	text-align:center-left;
+	}

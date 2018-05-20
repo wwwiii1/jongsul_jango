@@ -1,0 +1,41 @@
+
+{% extends "base.html" %}
+
+ {% block login_script %}
+
+    <script type="text/javascript">
+			window.onload=function(){
+				var nav1 = document.getElementById('nav1');
+				nav1.addEventListener("click", function(){
+					var child = this.querySelector("div");
+					child.style.display = "block"
+				});
+				var nav1 = document.getElementById('nav1');
+				nav1.addEventListener("mouseleave", function(){
+					var child = this.querySelector("div");
+					child.style.display = "none"
+				});
+			}
+		</script>
+ {% endblock login_script %}
+
+
+ {% block sidebar %}
+             <div class="nav">
+			<ul>
+				<li id="nav1">
+					<a href="#">로그인/회원가입</a>
+					<div>
+						<a href="{% url 'usermanage:signin' %}">로그인</a>
+						<a href="{% url 'usermanage:join' %}">회원가입</a>
+					</div>
+				</li>
+				<li id="nav2">
+					<a href="{% url 'check:check' %}">질병확인하기</a>
+				</li>
+				<li id="nav3">
+					<a href="{% url 'reservation:index' %}">병원 예약하기</a>
+				</li>
+			</ul>
+		</div>
+        {% endblock %}

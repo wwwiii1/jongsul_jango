@@ -1,0 +1,77 @@
+{% extends "home.html" %}
+
+{% block css %}
+{{ block.super }}
+    {% load static %}
+ <link rel="stylesheet" type="text/css" href="{% static 'usermanage/login.css' %}"/>
+{% endblock css %}
+
+
+{% block content %}
+
+<section style="width:100%;margin:40 auto; background-color: white;">
+	<form method="post" action="{% url 'usermanage:join' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="회원가입"/>
+    </form>
+    <!--
+			<form id="new" method="get">
+			<table>
+				<tr>
+				<td>아이디</td>
+				<td><input type="text" name="id"></td>
+				<td><input type="button" id="same" value="중복확인"></td>
+				</tr>
+				<tr>
+				<td>비밀번호</td>
+				<td><input type="password" name="pwd"></td>
+				</tr>
+				<tr>
+				<td>비밀번호 확인</td>
+				<td><input type="password" name="pwd2"></td>
+				</tr>
+				<tr>
+				<td>이름</td>
+				<td><input type="text" name="name"></td>
+				</tr>
+				<tr>
+				<td>전화번호</td>
+				<td><input type="text" name="number"></td>
+				</tr>
+				<tr>
+				<td>생년월일</td>
+				<td><input type="date" id="birth" name="birth"></td>
+				</tr>
+				<tr>
+				<td>성별</td>
+				<td><input type="radio" name="sex" value="male">남자<input type="radio" name="sex" value="female">여자</td>
+				</tr>
+				<tr>
+				<td>이메일</td>
+				<td><input type="text" name="email">@
+				<select name="mail">
+				<option value="naver">naver.com</option>
+				<option value="daum">hanmail.net</option>
+				<option value="google">gmail.com</option>
+				</select></td>
+				</tr>
+				<tr>
+				<td>앓고있는 질병</td>
+				<td><input type="text", name="disease"></td>
+				</tr>
+				<tr>
+				<td>개인정보이용에 동의하십니까?</td>
+				<td><input type="radio" name="agreement" value="yes">예<input type="radio" name="agreement" value="no">아니오</td>
+				</tr>
+				<tr>
+				<td colspan="2">
+				<input type="submit" id="sign" value="완료">
+				<input type="button" id="back" value="돌아가기" onclick="location.href='file:///C:/Users/HusnSooKim/Desktop/main.html'">
+				</td>
+				</tr>
+				</table>
+			</form>
+			-->
+		</section>
+{% endblock content %}
