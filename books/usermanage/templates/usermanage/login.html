@@ -10,8 +10,8 @@
 
 {% block content %}
 
-   <section style="width:100%;margin:40 auto; background-color: white;">
-        <form method="post" action="{% url 'usermanage:signin' %}" id="thisform">
+   <section  style=" background-color: white;">
+        <form method="post" action="{% url 'usermanage:signin' %}" id="thisform" style="width:50%;margin:100px;margin-left:300px; background-color: white;">
           {% csrf_token %}
          {{ form.as_p }}
             <input type="submit" value="로그인" />

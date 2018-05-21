@@ -6,6 +6,7 @@ body{
 	background:url("../images/back2.jpg");
 	background-size: 100% 100%;
 	background-repeat:no-repeat;
+	margin-top : 200px
 }
 div#bigbox{
 	width:1060px;
@@ -13,6 +14,7 @@ div#bigbox{
 	background:rgba(255,255,255,.0);
 	margin:20px auto;
 }
+
 header{
 	width:100%;
 }

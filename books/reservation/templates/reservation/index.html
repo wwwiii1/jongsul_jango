@@ -1,3 +1,12 @@
 {% extends 'home.html' %}
 
-<!-- 사용자 지역 잡아서 검색 툴로 검색해줌, 검색기능 추가 -->
+<!-- 예약 폼 -->
+{% block content%}
+    <center>
+        <form method="post" action="{% url 'reservation:reservation_result' %}" id="thisform"  style="width:50%;margin:100px;margin-left:300px; background-color: white;">
+          {% csrf_token %}
+         {{ form.as_p }}
+            <input type="submit" value="예약하기" />
+        </form>
+    </center>
+{% endblock content %}
