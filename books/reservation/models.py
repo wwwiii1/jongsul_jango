@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 class Reservation(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    username_id = models.ForeignKey(User, on_delete=models.CASCADE)
     hospital = models.CharField(max_length=100)
     reservation_date = models.DateField()
 

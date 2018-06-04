@@ -3,7 +3,7 @@
 <!-- 예약 폼 -->
 {% block content%}
     <center>
-        <form method="post" action="{% url 'reservation:reservation_result' %}" id="thisform"  style="width:50%;margin:100px;margin-left:300px; background-color: white;">
+        <form method="post" action="{% url 'reservation:index' %}" id="thisform"  style="width:50%;margin:100px;margin-left:300px; background-color: white;">
           {% csrf_token %}
          {{ form.as_p }}
             <input type="submit" value="예약하기" />

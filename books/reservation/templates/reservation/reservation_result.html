@@ -5,7 +5,7 @@
      <h2>reservation _list</h2>
         <ul>
         {% for reservation in reservation_all %}
-        <h3><li>{{ reservation.user }} : {{ reservation.reservation_date }} : {{ reservation.hospital }}</li></h3>
+        <h3><li>{{ reservation.username_id }} : {{ reservation.reservation_date }} : {{ reservation.hospital }}</li></h3>
         {% endfor %}
         </ul>
     </center>

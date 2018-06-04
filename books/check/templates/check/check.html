@@ -5,9 +5,9 @@
 <section style="width:50%;margin:40px auto; background-color: white;">
 			<fieldset style="height: 350px">
 				<legend> 진료사진 업로드</legend>.
-                <form method="post" action="{% url 'check:check' %}">
+                <form method="post" action="{% url 'check:check' %}" enctype="multipart/form-data">
 				{%  csrf_token %}
-                    <input id="file-upload" type="file" multiple><br>
+                    <input name = "file-upload" id="file-upload" type="file" accept=".jpg,.jpeg" multiple ><br>
 				<input type="submit" value="제출" style="margin-top: 290px; margin-left: 90%">
                 </form>
 			</fieldset>

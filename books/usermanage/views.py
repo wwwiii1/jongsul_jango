@@ -47,6 +47,7 @@ def signin(request):
 
         if user is not None:
             login(request, user)
+            request.session['user_id'] = username
             return redirect('home')
         else:
             return HttpResponse('로그인 실패, 다시 시도해 보세요')
